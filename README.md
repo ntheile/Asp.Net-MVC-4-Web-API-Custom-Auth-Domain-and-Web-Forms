@@ -1,9 +1,10 @@
-Asp.Net-MVC-4-Web-API-Custom-Auth-Domain-and-Web-Forms
-======================================================
+Asp.Net MVC 4 - Web API - Custom Auth using Domain or Web-Forms credentials
+===========================================================================
 
-Have you ever wanted to use two different authenication techniques in the some project? This is an example of how to use Windows Domain 
+Have you ever wanted to use two different authenication techniques in the same project? This is an example of how to use Windows Domain 
 Authenication as well as Forms/oAuth authenication by creating a custom auth attribute. Sometimes you want domain authenicated users 
-as well as web forms authenicated users to access a resource on a web api.
+as well as web forms authenicated users to access a resource on a web api.**This type could useful on an interal network or multi-domain forest where users 
+may have different credentials for different resources.**
 
 First I created a folder called Auth and dropped a new file called Auth.cs , within this I created a `App.Utils` namespace that has a class called `DomainFormsAuth` which imherits from
 `System.Web.Http.AuthorizeAttribute`. 
